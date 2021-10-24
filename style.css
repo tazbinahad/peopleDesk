@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  margin-bottom: 0;
+}
+img {
+  max-width: 100%;
+}
+.shadow {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05), 0px 2px 10px rgba(0, 0, 0, 0.08),
+    0px 1px 5px rgba(0, 0, 0, 0.05) !important;
+}
+/* ------------------------------------------ */
+.bg-Slate-Blue {
+  background: #6469de;
+}
+.bg-red {
+  background: #ff4842;
+}
+.bg-yollow {
+  background: #f78c12;
+}
+.bg-Slate-blue {
+  background: #009cde;
+}
+.bg-green {
+  background: #34a853;
+}
+.bg-seagreen {
+  background: #26b86e;
+}
+.bg-Coral {
+  background: #ff825c;
+}
+
+/* BS Container Modified */
+/* .container {
+  max-width: 1200px;
+  padding-left: 0;
+  padding-right: 0;
+} */
+
+
+
+/* -------------------------------------------- */
+/* Heading */
+.dashboard-heading {
+  padding-top: 50px;
+  /* It should be calculated from navbar */
+}
+.dashboard-heading .heading {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.dashboard-heading .heading .welcome {
+  display: flex;
+  align-items: center;
+  margin-right: 111px;
+}
+
+.dashboard-heading .heading .welcome .wc-text > h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.dashboard-heading .heading .welcome .wc-text > h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.87);
+  padding-top: 8px;
+}
+.dashboard-heading .heading .welcome .wc-text {
+  margin-right: 24px;
+}
+.dashboard-heading .heading .calender {
+  display: flex;
+  align-items: center;
+  margin-right: 42px;
+}
+.dashboard-heading .heading .calender > span {
+  margin-right: 10px;
+  color: #34a853;
+}
+.dashboard-heading .heading .calender > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+}
+/* -------------------------------------------- */
+
+.dashboard-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dashboard-card .cards{
+  margin-bottom: 30px;
+}
+/* Top Small Card */
+.sm-card-wrapper {
+  max-width: 393px;
+}
+.sm-card-wrapper .single-card {
+  display: flex;
+  flex-direction: row;
+  width: 682px;
+  height: 120px;
+  padding: 20px 34px;
+  margin-bottom: 16px;
+}
+.sm-card-wrapper .single-card:last-child{
+  margin-bottom: 0;
+}
+.sm-card-wrapper .single-card .left-content {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+}
+.sm-card-wrapper .single-card .right-content {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  margin-left: 47px;
+  position: relative;
+}
+.sm-card-wrapper .single-card .right-content::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.12);
+  top: 50%;
+  left: -47px;
+  transform: translateY(-50%);
+}
+.sm-card-wrapper .single-card .left-content > h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.sm-card-wrapper .single-card .right-content .scard-count:first-child {
+  margin-right: 55px;
+}
+.sm-card-wrapper .single-card .right-content .scard-count > h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.sm-card-wrapper .single-card .right-content .scard-count > p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 8px;
+}
+
+/* -------------------------- */
+.dashboard-card .lg-card,
+.dashboard-card .application-source {
+  width: 682px;
+  height: 467px;
+  background: #ffffff;
+  padding: 22px 38px 75px 31px;
+}
+.titile {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.sub-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 8px;
+  padding-bottom: 35px;
+}
+.interviewpipeline,
+.dashboard-card .sm-card {
+  width: 477px;
+  height: 467px;
+
+  padding: 22px 38px 75px 31px;
+}
+
+.elements {
+  display: flex;
+}
+.elements {
+  display: flex;
+}
+.elements .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 12.5px;
+}
+.element-ratio {
+  margin-right: 40px;
+}
+.element-ratio .ratio {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #000000;
+  padding: 23px 0;
+  padding-right: 22px;
+  position: relative;
+}
+.element-ratio .ratio::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #c4c4c4;
+  top: 0;
+  right: 0;
+}
+.element-ratio .ratio:nth-child(2):after {
+  height: 105%;
+  top: -1.5px;
+}
+.element-ratio .ratio:last-child::after {
+  top: -0.5px;
+}
+.elements .pipeline .cadidate {
+  display: flex;
+  align-items: center;
+  padding: 19px 0;
+  position: relative;
+}
+.elements .pipeline .cadidate::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 34px;
+  background: #c4c4c4;
+  top: 50%;
+  left: -40px;
+}
+.element-ratio .title {
+  margin-bottom: 45px;
+}
+.elements .pipeline .cadidate .i1 {
+  height: 24px;
+  width: 24px;
+  /* background: #6469de; */
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+.elements .pipeline .cadidate h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 19px;
+}
+
+.elements .pipeline .cadidate .i2 {
+  font-size: 11px;
+  margin-right: 11px;
+}
+
+.elements .pipeline .cadidate h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.recruitment-card {
+  max-height: 393px;
+}
+.recruitment-card .sub-title {
+  max-width: 362px;
+}
+.recruitment-card .content {
+  display: flex;
+}
+.recruitment-card .content .r-side .side > h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 5px;
+}
+.recruitment-card .content .r-side .side > h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.recruitment-card .content .r-side .side {
+  padding: 10px 0;
+  position: relative;
+}
+
+.side .vertical {
+  position: absolute;
+  width: 3px;
+  height: 55px;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+}
+
+/* Those css are additional, Maybe It will be remove */
+.recruitment-img {
+  margin-right: 40px;
+}
+.sm-card-wrapper .single-card .left-content > img {
+  height: 80px;
+  width: 80px;
+  margin-right: 70px;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive CSS */
+@media screen and (max-width: 1199px){
+  
+}
