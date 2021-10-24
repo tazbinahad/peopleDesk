@@ -97,7 +97,8 @@
                     <p class="sub-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <div class="content">
                         <div class="recruitment-img">
-                            <img src="./img/images1.png" alt="">
+                            <div id="recruitment-chart">
+                            </div>
                         </div>
                         <div class="sorting r-side">
                             <div class="sorting-ratio side">
@@ -125,7 +126,7 @@
                     <h6 class="titile">Applications received by source</h6>
                     <p class="sub-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <div class="source-items">
-                        <div id="chart">
+                        <div id="application-source-chart">
                         </div>
                     </div>
                 </div>
@@ -221,9 +222,41 @@
                 ],
             }
         };
+// -----------------------------------------------
+        var options2 = {
+            series: [78, 54, 13],
+            colors:['#26B86E', '#6469DE', '#FF825C'],
+            chart: {
+                height: 250,
+                type: 'radialBar',
+            },
+            plotOptions: {
+                radialBar: {
+                    dataLabels: {
+                        name: {
+                            fontSize: '22px',
+                        },
+                        value: {
+                            fontSize: '16px',
+                        },
+                        total: {
+                            show: true,
+                            label: 'Total',
+                            formatter: function (w) {
+                                // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                                return 249
+                            }
+                        }
+                    }
+                }
+            },
+            labels: ['Apples', 'Oranges', 'Bananas'],
+        };
 
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
+        var chart1 = new ApexCharts(document.querySelector("#application-source-chart"), options);
+        var chart2 = new ApexCharts(document.querySelector("#recruitment-chart"), options2);
+        chart1.render();
+        chart2.render();
     </script>
 </body>
 
